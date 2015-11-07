@@ -6,9 +6,17 @@
 #ifndef ALPHAENGINE_BASE_H
 #define ALPHAENGINE_BASE_H
 
+// Some default most used includes
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+using namespace std;
+
 namespace AlphaEngine
 {
-    class Base {
+    class Base
+    {
     private:
 
     public:
