@@ -11,6 +11,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <sstream>
 using namespace std;
 
 namespace AlphaEngine
@@ -20,8 +21,9 @@ namespace AlphaEngine
     private:
 
     public:
-        Base();
-        ~Base();
+      Base();
+      ~Base();
+      void ThrowErr(string, int);
     };
 }
 

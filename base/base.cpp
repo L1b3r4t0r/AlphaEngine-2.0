@@ -6,14 +6,20 @@
 
 namespace AlphaEngine
 {
-    Base::Base()
-    {
+  Base::Base()
+  {
 
-    }
-    Base::~Base()
-    {
+  }
 
-    }
+  Base::~Base()
+  {
+
+  }
+
+  void Base::ThrowErr(string msg, int code)
+  {
+    cout << msg << hex << code;
+  }
 }
 
 

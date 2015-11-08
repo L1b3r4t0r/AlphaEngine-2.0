@@ -3,3 +3,25 @@
 //
 
 #include "LuaMngr.h"
+
+namespace AlphaEngine
+{
+  LuaMngr::LuaMngr()
+  {
+    L = luaL_newstate();
+    luaL_openlibs(L);
+
+  }
+
+  LuaMngr::~LuaMngr()
+  {
+    lua_close(L);
+  }
+
+  template<typename T>
+  bool LuaMngr::setGlobal(string name, T val)
+  {
+
+    return 0;
+  }
+}
