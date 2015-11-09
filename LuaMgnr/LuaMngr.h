@@ -24,8 +24,10 @@ namespace AlphaEngine
      * setGlobal<type>(name, contents);
      * ```
      */
-    template <typename T>
+    template <class T>
     bool setGlobal(string, T);
+    template <>
+    bool setGlobal(string, string);
   private:
     lua_State *L;
   };

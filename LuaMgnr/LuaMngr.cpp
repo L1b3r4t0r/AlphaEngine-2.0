@@ -18,7 +18,7 @@ namespace AlphaEngine
     lua_close(L);
   }
 
-  template<typename T>
+  template<class T>
   bool LuaMngr::setGlobal(string name, T val)
   {
 

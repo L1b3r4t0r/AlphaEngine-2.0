@@ -23,6 +23,13 @@ namespace AlphaEngine
     public:
       Base();
       ~Base();
+      /**
+      * Throw ecxeption if exeption id is in the fatal range then engine will exit with error.
+      * usage
+      * ```c++
+      * Base::ThrowErr(msg, code);
+      * ```
+      */
       void ThrowErr(string, int);
     };
 }
